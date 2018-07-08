@@ -2,12 +2,18 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterDiv = styled.div`
-    background: blue;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
 `;
 
 export class Footer extends React.Component {
     render() {
-        return <FooterDiv>{this.props.children}</FooterDiv>
+        return (
+            <FooterDiv>
+                <div>config editor @2018</div>
+            </FooterDiv >
+        )
     }
 }
